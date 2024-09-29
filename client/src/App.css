@@ -1,7 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+.icon{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.message{
+  display: none;
+}
+.showMessage{
+  display: block;
+  color: var(--whiteColor);
+  background: rgb(255, 0, 0);
+  border-radius: 3px;
+  text-align: center;
 }
