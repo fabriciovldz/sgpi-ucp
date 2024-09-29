@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .flex{
   display: flex;
@@ -21,4 +29,10 @@
   background: rgb(255, 0, 0);
   border-radius: 3px;
   text-align: center;
+}
+.navbar-brand img{
+  margin-left: 20px;
+}
+.navbar-link {
+  
 }
