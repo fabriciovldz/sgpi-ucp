@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
   }
-:root{
+:root,.app-container, .login.page{
     --primaryColor: #1a5d96
     --secondaryColor: #5f9f72
     --hoverColor: #e0fee9
@@ -15,11 +15,12 @@
     --greyText: #848484;
     
     height: 100vh;
-    width: 100%;
     background-image: linear-gradient(45deg,#1a5d96,#5f9f72, #673ab7);
     background-size: 300% 300%;
     animation: color-anim 4s infinite linear alternate;
     -webkit-animation: color-anim 4s infinite linear alternate;
+    margin: 0;
+    padding: 0;
   }
   @keyframes color-anim {
     0%{

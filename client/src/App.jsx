@@ -13,20 +13,20 @@ const router = createBrowserRouter([
     element: <div></div>
   },
   {
-    path:'/sistemasgpi',
-    element: <div><Dashboard></Dashboard></div>
+    path:'/formularios',
+    element: <Dashboard></Dashboard>
   },
   {
     path:'/iniciarsesion',
-    element: <div><Login></Login></div>
+    element: <Login></Login>
   }
 ])
 function App() {
 
   return (
-      <div> 
+      <div className='app-container'> 
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img src={logoUCP} width="40" alt='logoUCP' style={{marginLeft:'20px'}}></img>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <a className="nav-link" href="/formularios"> Formularios <span className="sr-only">(Actualmente)</span></a>
+                  <a className="nav-link" href="/formularios"> Formularios <span className="sr-only"></span></a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/reportes"> Reportes </a>
@@ -45,6 +45,9 @@ function App() {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link disabled" href="/admin"> Administrador </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/iniciarsesion"> Iniciar Sesion </a>
                 </li>
               </ul>
             </div>
