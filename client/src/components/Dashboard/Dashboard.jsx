@@ -4,9 +4,7 @@ import './Dashboard.css'
 function Dashboard() {
   return (
     <div>
-        This is a Dashboard Page
-        <a href='/login'> Login </a> 
-        <a href='/'>LogOut </a>
+        PAGINA FORMULARIOS - NAVBAR AL COSTADO PARA MOSTRAR TODOS LOS FORMULARIOS PARA RELLENAR - NAVBAR SIEMPRE SE TIENE QUE MOSTRAR, Y RELLENAR FORMULARIO SOLAMENTE SI TIENE INICIADO SESION
     </div>
   )
 }
