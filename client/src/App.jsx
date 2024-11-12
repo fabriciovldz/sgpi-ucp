@@ -63,7 +63,23 @@ function App() {
         <div className="app-container">
           <HandleLinks />
           <Routes>
-            <Route path="/" element={<div>Inicio</div>} />
+            <Route path="/" element={
+              <div>
+                <div></div>
+                <section className="dark:bg-gray-900" style={{marginTop: 100}}>
+                    <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16" 
+                    style={{
+                        backgroundColor: "white",
+                        borderRadius: "15px", 
+                        boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
+                        maxWidth: "800px"
+                      }}>
+                        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Sistema de Gesion de Proyectos de Investigacion</h1>
+                        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Este es un sistema enfocado a todos los aspectos de un Proyectos de Investigacion. Aca vas a encontrar los formularios iniciales para empezar junto con una pequeña guia para completar y poder seguir tus proyectos en tiempo real</p>
+                    </div>
+                </section>
+              </div>} 
+            />
             <Route path="/formularios" element={<Dashboard />} />
             <Route path="/iniciarsesion" element={<Login />} />
           </Routes>

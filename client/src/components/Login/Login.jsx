@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoSession from '../../assets/iconSystem.png';
 import { useNavigate } from 'react-router-dom';
 import { useUsuario } from '../../context/userContext';
 import './Login.css';
@@ -60,7 +61,9 @@ const Login = () => {
   return (
     <div className="login-page">
       <div className="form-container">
-        <div className="image-holder"></div>
+        <div className="image">
+          <img src={logoSession} width="40" alt="logoSession" style={{ width: '350px' }} />
+        </div>
         <form onSubmit={handleSubmit}>
           <h2 className="text-center"><strong>SGPI</strong> UCP</h2>
           <div className="form-group">
